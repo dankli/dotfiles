@@ -2,5 +2,5 @@
 
 Install-Module -Name PowerShellGet -Force
 Update-Module -Name PowerShellGet
-PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force
+PowerShellGet\Install-Module posh-git -Force
 Add-PoshGitToProfile -AllHosts

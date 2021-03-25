@@ -60,6 +60,7 @@
     restore = "!f(){ git add -A && git commit -qm 'RESTORE SAVEPOINT'; git reset $1 --hard; }; f"
     ri = "!f(){ DEFAULT=$(git default); git fetch origin && git rebase --interactive origin/${1-$DEFAULT}; }; f"
     save = !git add -A && git commit -m 'SAVEPOINT'
+    savep = !git add -A && git commit -m 'SAVEPOINT && git push'
     set-origin = remote set-url origin
     set-upstream = remote set-url upstream
     st = status -s
